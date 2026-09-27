@@ -1,0 +1,6 @@
+{
+  "name": "Serene - Soft Life Accountability",
+  "description": "A calm, aesthetic soft-life accountability platform that parses visual vision boards into mindful daily practices, protects privacy, and illuminates real-world progress with warm encouragement.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

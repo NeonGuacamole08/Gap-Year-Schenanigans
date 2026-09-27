@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #F4F8FA;
+    color: #1E3A5F;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-summit {
+    font-family: 'Cinzel', 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: 0.02em;
+  }
+
+  .font-serif-celestial {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+/* Heavenly Cloud-Glass & Alpine Elevation */
+.cloud-glass-card {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(195, 219, 235, 0.55);
+  box-shadow: 0 10px 30px -5px rgba(30, 58, 95, 0.06), 0 0 20px -2px rgba(229, 169, 82, 0.08);
+}
+
+.cloud-glass-card:hover {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(142, 187, 219, 0.7);
+  box-shadow: 0 16px 40px -10px rgba(30, 58, 95, 0.12), 0 0 25px 2px rgba(229, 169, 82, 0.15);
+}
+
+.cloud-glass-panel {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(195, 219, 235, 0.65);
+  box-shadow: 0 20px 50px -10px rgba(30, 58, 95, 0.08), inset 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+/* Heavenly Sunbeam Gold Glow */
+.sunbeam-glow {
+  box-shadow: 0 10px 35px -5px rgba(229, 169, 82, 0.3), 0 0 20px 2px rgba(245, 208, 142, 0.4);
+}
+
+.alpine-mist-glow {
+  box-shadow: 0 10px 35px -5px rgba(126, 174, 209, 0.3), 0 0 20px 2px rgba(182, 215, 238, 0.4);
+}
+
+/* Custom mountain mist scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EBF3F7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B8D4E5;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #96BDD4;
+}
+
+@keyframes bounceShort {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes spinSlow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-bounce-short {
+  animation: bounceShort 1.6s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spinSlow 12s linear infinite;
+}
